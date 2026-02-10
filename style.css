@@ -8,16 +8,13 @@
 body {
     background-color: #1a1d29;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 2rem;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
 }
 
 /* Boutons de direction */
