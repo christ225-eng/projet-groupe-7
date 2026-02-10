@@ -3,34 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foot Locker Grab</title>
+    <title>Boutons de Direction</title>
+    <link rel="stylesheet" href="boutons.css">
     <link rel="stylesheet" href="style.css">
-    <!-- Importation d'une police similaire pour le titre (style dripping/horror) et le texte -->
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <h1 class="title">FOOT LOCKER GRAB</h1>
-            <p class="subtitle">Jouez et gagnez les sneakers<br>de vos rêves.</p>
-        </div>
-
-        <div class="visual-elements">
-            <!-- Machine à pince (Claw) -->
-            <div class="claw-container">
-                <img src="Capture d'écran 2026-01-11 171634.png" alt="Claw Machine" class="claw-icon">
-            </div>
-            
-            <!-- Groupe de sneakers -->
-            <div class="sneakers-group">
-                <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=400&auto=format&fit=crop" alt="Sneaker 1" class="sneaker sneaker-1">
-                <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=400&auto=format&fit=crop" alt="Sneaker 2" class="sneaker sneaker-2">
-                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=400&auto=format&fit=crop" alt="Sneaker 3" class="sneaker sneaker-3">
-            </div>
-        </div>
-
-        <div class="footer">
-            <a href="#" class="btn-play">jouer</a>
+        <!-- Boutons de direction -->
+        <div class="controls">
+            <button class="control-btn btn-up">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                </svg>
+            </button>
+            <button class="control-btn btn-left">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6z"/>
+                </svg>
+            </button>
+            <button class="control-btn btn-right">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/>
+                </svg>
+            </button>
+            <button class="control-btn btn-down">
+                <svg viewBox="0 0 24 24">
+                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/>
+                </svg>
+            </button>
         </div>
     </div>
 </body>
