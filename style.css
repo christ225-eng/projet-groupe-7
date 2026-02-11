@@ -6,16 +6,19 @@
 }
 
 body {
-    /* Ajout de l'image */
-    background-image: url('image/image\ 18.png');
-    
-    /* Pour que l'image couvre tout l'écran sans se répéter */
-    background-size: cover;
+    background-image: url('image/claw-machine-no-bg-v2.png');
+
+    background-size: contain;      /* 👈 image entière visible */
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1a1d29;
+
     min-height: 100vh;
-    padding: 2rem;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
