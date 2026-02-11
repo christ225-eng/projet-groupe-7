@@ -1,6 +1,6 @@
 /* Configuration globale de la page */
 body {
-    background-image: url("Image2.png");
+    background-image: url("Image/image 5.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -11,7 +11,7 @@ body {
 /* En-tête / Barre de navigation */
 .Menu {
     display: grid;
-    grid-template-columns: auto 1fr auto; /* gauche / centre / droite */
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     width: 100%;
     position: absolute;
@@ -34,24 +34,28 @@ body {
     text-align: center;
     margin: 0;
     justify-self: center;
-    color: white; /* Ajouté pour la lisibilité sur fond sombre */
+    color: white;
 }
 
 /* Structure du formulaire */
 .formulaire {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Réduit pour éviter que le formulaire soit trop long */
+    gap: 15px;
     width: 300px;
-    margin: 150px auto; /* Augmenté pour ne pas chevaucher le Menu */
+    margin: 150px auto;
     color: white;
     font-size: 20px;
 }
 
+/* Inputs */
 .formulaire input {
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
     border: none;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Styles des boutons */
@@ -93,4 +97,45 @@ body {
 
 .boutton2:hover {
     background-color: #525f85;
+}
+
+
+/* ========================= */
+/* 🔥 RESPONSIVE MOBILE 🔥 */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    /* Menu passe en colonne */
+    .Menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .Titre {
+        font-size: 22px;
+    }
+
+    /* Formulaire prend plus de largeur */
+    .formulaire {
+        width: 90%;
+        margin: 40px auto;
+        font-size: 16px;
+    }
+
+    /* Boutons plus adaptés mobile */
+    .boutton,
+    .boutton2 {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        height: auto;
+    }
+
+    body {
+        background-attachment: scroll; /* évite bug sur mobile */
+    }
 }
