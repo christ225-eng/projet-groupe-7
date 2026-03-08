@@ -8,7 +8,7 @@
 body {
     background-image: url('image/claw-machine-no-bg-v2.png');
 
-    background-size: contain;      /* 👈 image entière visible */
+    background-size:700px;      /* 👈 image entière visible */
     background-position: center;
     background-repeat: no-repeat;
     background-color: #1a1d29;
