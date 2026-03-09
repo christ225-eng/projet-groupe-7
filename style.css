@@ -1,0 +1,10 @@
+body{
+margin:0;
+height:100vh;
+font-family:'Poppins', sans-serif;
+background:#e10e0e;
+color:white;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
