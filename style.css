@@ -17,7 +17,7 @@ overflow:hidden;
 
 h1{
 font-family: "Rubik Wet Paint", system-ui;
-font-size:90px;
+font-size:80px;
 margin-top:10px;
 }
 
@@ -36,7 +36,7 @@ top:50%;
 left:50%;
 transform:translate(-50%,-50%);
 width:500px;
-height:500px;
+height:350px;
 border-radius:50%;
 background:radial-gradient(circle,
 rgba(80,90,100,0.8) 0%,
@@ -59,6 +59,13 @@ border-radius:30px;
 font-size:24px;
 text-decoration:none;
 font-weight:600;
+transition:0.3s;
+}
+
+.button:hover{
+    background:#7b5a8f;
+color:white;
+transform:translateX(-50%) scale(1.1);
 }
 
 /* machine haut droite */
